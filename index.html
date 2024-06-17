@@ -5,6 +5,8 @@
   <head>
     <!-- place meta-information about webpages and stuff required for our webpage to render correctly-->
     <meta charset="utf-8" />
+    <!-- We can also link our stylesheets to the html page-->
+     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>My Webpage</title>
   </head>
   <body>
@@ -31,7 +33,7 @@
         An unordered list is, namely, a list where the order of items don't
         matter.
       </p>
-      <ul>
+      <ul class="list-object">
         <li>This item</li>
         <li>That item</li>
         <li>Another item</li>
@@ -44,7 +46,7 @@
         An ordered list is where order does matter, such as step by step
         instructions.
       </p>
-      <ol>
+      <ol class="list-object">
         <li>First item</li>
         <li>Second item</li>
         <li>Third item</li>
@@ -65,5 +67,23 @@
        </p>
        <p>This will take you to the <a href="./pages/about.html" target="_blank">about page</a>.</p>
     </section>
+    <section>
+      <h2>Recipes</h2>
+      <a href="./recipes.html" target="_blank">Click here</a> <span>to go visit the <strong>Recipes</strong> page</span>
+    </section>
+    <div class="alert-text">Please agree to our terms of service.</div>
+    <div class="alert-text" id="severe">You must do this.</div>
+    <div>
+      <div class="subsection header">Latest posts</div>
+      <p class="subsection preview">This is a preview of a post.</p>
+    </div>
+
+    <div class="ancestor">
+      <p>This is the ancestor class.</p>
+      <div class="contents">
+        <p>This is the first content child.</p>
+        <div class="contents">This is the second content child, a child of the first.</div>
+      </div>
+    </div>
   </body>
 </html>

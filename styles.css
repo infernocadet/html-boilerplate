@@ -1,0 +1,40 @@
+/* This selects all elements */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This selects any "classes" which we define in our HTML files. we start it with a period and then the name of the class. This is case-sensitive. */
+.list-object {
+  color: green;
+  font-size: 20px;
+}
+
+.alert-text {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* This selects ID selectors which we define in our HTML files. Important to note, IDs are unique and cannot be shared. They should not be repeated on a single page, and shouldn't contain whitespace. We use a hashtag to reference this ID */
+#severe {
+  font-size: 18px;
+}
+
+/* We can also group elements which share the same style declarations: */
+
+.list-object,
+.alert-text {
+  background-color: gray;
+}
+
+/* We can chain selectors as a list without any separation */
+
+.subsection.header {
+  color: burlywood;
+}
+
+/* We can use the descendant combinator to select items based on their relationship with another element. Here, .ancestor .child selects an element with class child if it is has an ancestor with .ancestor class.  */
+
+.ancestor .contents {
+  background-color: beige;
+}
